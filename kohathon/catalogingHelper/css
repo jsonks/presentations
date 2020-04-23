@@ -1,0 +1,4 @@
+#cataloguing_additem_newitem fieldset.rows label.required:after {
+    color: red;
+    content: " *";
+}
