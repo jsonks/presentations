@@ -1,0 +1,15 @@
+SELECT IFNULL(CONCAT('https://www.seknfind.org/cgi-bin/koha/opac-image.pl?imagenumber=', bi.imagenumber,''),"https://dl.dropboxusercontent.com/s/hn1h8sdaja8gpoa/ImageComingSoon.png?dl=0") AS image, b.biblionumber,
+      i.barcode, b.title, i.itemcallnumber, bi.imagenumber,
+      ExtractValue(metadata,'//datafield[@tag="300"]/subfield[@code>="a"]')
+FROM biblio b
+LEFT JOIN biblioimages bi ON (b.biblionumber=bi.biblionumber)
+LEFT JOIN biblio_metadata bm ON (b.biblionumber=bm.biblionumber)
+LEFT JOIN items i ON (b.biblionumber=i.biblionumber)
+WHERE i.location = '320950PCKIT'
+	AND i.itemcallnumber LIKE "%Puppet%"
+    AND ExtractValue(metadata,'//datafield[@tag="300"]/subfield[@code>="a"]') LIKE '%book%'
+    AND ExtractValue(metadata,'//datafield[@tag="300"]/subfield[@code>="a"]') LIKE '%puppet%'
+    AND ExtractValue(metadata,'//datafield[@tag="300"]/subfield[@code>="a"]') NOT LIKE '%doll%'
+/*    AND ExtractValue(metadata,'//datafield[@tag="300"]/subfield[@code>="a"]') NOT LIKE '%toy%' */
+ORDER BY b.title
+LIMIT 1000
