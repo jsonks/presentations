@@ -1,0 +1,44 @@
+<h3><a class="goback" href="/services/youth-services/"><i class="fas fa-backward"></i> Return to Youth Services</a></h3>
+<div class="tab">
+<ul id="tabnav">
+    <li><button class="tablinks" onclick="openKit(event, 'pkits')" id="defaultOpen">Puppet Kits</button></li>
+    <li><button class="tablinks" onclick="openKit(event, 'puppets')">Standalone Puppets</button></li>
+    <li><button class="tablinks" onclick="openKit(event, 'tkits')">Plush Toy Kits</button></li>
+    <li><button class="tablinks" onclick="openKit(event, 'toys')">Standalone Plush Toys</button></li>
+</ul>
+</div>
+<div id="pkits" class="tabcontent">
+<p>These kits include at least one hand puppet or finger puppet and at least one book.</p>
+<div class="koha-grid">
+[jsoncontentimporter url=https://www.seknfind.org/cgi-bin/koha/svc/report?id=2680&amp;annotated=1]
+<div class="koha-grid-item"><a href="https://www.seknfind.org/cgi-bin/koha/opac-image.pl?imagenumber={imagenumber}" target="_blank" rel="noopener noreferrer"><img src="{image}" width="150%" /></a><span class="koha-title"><a href="https://www.seknfind.org/cgi-bin/koha/opac-detail.pl?biblionumber={biblionumber}" target="_blank" rel="noopener noreferrer"><strong>{title}</strong><i class="fas fa-external-link-alt"></i></a></span><span class="koha-hold-links"><a href="https://staff.seknfind.org/cgi-bin/koha/reserve/request.pl?biblionumber={biblionumber}" target="_blank" rel="noopener noreferrer"><span class="koha-button"><i class="fas fa-flag"></i> Place Hold (SEKnFind Staff)</span></a><a href="https://www.seknfind.org/cgi-bin/koha/opac-reserve.pl?biblionumber={biblionumber}" target="_blank" rel="noopener noreferrer"><span class="koha-button"><i class="far fa-flag"></i> Place Hold (SEKnFind OPAC)</span></a></span></div>
+[/jsoncontentimporter]
+</div>
+</div>
+
+<div id="puppets" class="tabcontent">
+<p>These kits include only a hand or finger puppet.</p>
+<div class="koha-grid">
+[jsoncontentimporter url=https://www.seknfind.org/cgi-bin/koha/svc/report?id=2681&amp;annotated=1]
+<div class="koha-grid-item"><a href="https://www.seknfind.org/cgi-bin/koha/opac-image.pl?imagenumber={imagenumber}" target="_blank" rel="noopener noreferrer"><img src="{image}" width="150%" /></a><span class="koha-title"><a href="https://www.seknfind.org/cgi-bin/koha/opac-detail.pl?biblionumber={biblionumber}" target="_blank" rel="noopener noreferrer"><strong>{title}</strong><i class="fas fa-external-link-alt"></i></a></span><span class="koha-hold-links"><a href="https://staff.seknfind.org/cgi-bin/koha/reserve/request.pl?biblionumber={biblionumber}" target="_blank" rel="noopener noreferrer"><span class="koha-button"><i class="fas fa-flag"></i> Place Hold (SEKnFind Staff)</span></a><a href="https://www.seknfind.org/cgi-bin/koha/opac-reserve.pl?biblionumber={biblionumber}" target="_blank" rel="noopener noreferrer"><span class="koha-button"><i class="far fa-flag"></i> Place Hold (SEKnFind OPAC)</span></a></span></div>
+[/jsoncontentimporter]
+</div>
+</div>
+
+<div id="tkits" class="tabcontent">
+<p>These kits include at least one plush toy or flip doll and at least one book.</p>
+<div class="koha-grid">
+[jsoncontentimporter url=https://www.seknfind.org/cgi-bin/koha/svc/report?id=2683&amp;annotated=1]
+<div class="koha-grid-item"><a href="https://www.seknfind.org/cgi-bin/koha/opac-image.pl?imagenumber={imagenumber}" target="_blank" rel="noopener noreferrer"><img src="{image}" width="150%" /></a><span class="koha-title"><a href="https://www.seknfind.org/cgi-bin/koha/opac-detail.pl?biblionumber={biblionumber}" target="_blank" rel="noopener noreferrer"><strong>{title}</strong><i class="fas fa-external-link-alt"></i></a></span><span class="koha-hold-links"><a href="https://staff.seknfind.org/cgi-bin/koha/reserve/request.pl?biblionumber={biblionumber}" target="_blank" rel="noopener noreferrer"><span class="koha-button"><i class="fas fa-flag"></i> Place Hold (SEKnFind Staff)</span></a><a href="https://www.seknfind.org/cgi-bin/koha/opac-reserve.pl?biblionumber={biblionumber}" target="_blank" rel="noopener noreferrer"><span class="koha-button"><i class="far fa-flag"></i> Place Hold (SEKnFind OPAC)</span></a></span></div>
+[/jsoncontentimporter]
+</div>
+</div>
+
+<div id="toys" class="tabcontent">
+<p>These kits include only a plush toy or flip doll.</p>
+<div class="koha-grid">
+[jsoncontentimporter url=https://www.seknfind.org/cgi-bin/koha/svc/report?id=2682&amp;annotated=1]
+<div class="koha-grid-item"><a href="https://www.seknfind.org/cgi-bin/koha/opac-image.pl?imagenumber={imagenumber}" target="_blank" rel="noopener noreferrer"><img src="{image}" width="150%" /></a><span class="koha-title"><a href="https://www.seknfind.org/cgi-bin/koha/opac-detail.pl?biblionumber={biblionumber}" target="_blank" rel="noopener noreferrer"><strong>{title}</strong><i class="fas fa-external-link-alt"></i></a></span><span class="koha-hold-links"><a href="https://staff.seknfind.org/cgi-bin/koha/reserve/request.pl?biblionumber={biblionumber}" target="_blank" rel="noopener noreferrer"><span class="koha-button"><i class="fas fa-flag"></i> Place Hold (SEKnFind Staff)</span></a><a href="https://www.seknfind.org/cgi-bin/koha/opac-reserve.pl?biblionumber={biblionumber}" target="_blank" rel="noopener noreferrer"><span class="koha-button"><i class="far fa-flag"></i> Place Hold (SEKnFind OPAC)</span></a></span></div>
+[/jsoncontentimporter]
+</div>
+</div>
